@@ -1,12 +1,15 @@
-<?php
-if (!empty($_GET['name']) && !empty($_GET['nationallity']) && !empty($_GET['age'])) {
-  &name = ucfirst(strtolower($_GET['name']));
-  echo <<< L
-  Imię: $_GET[name] <br>
-  Narodowość: $_GET[nationallity] <br>
-  Wiek: $_GET[age] <br>
-  L;
-}else {
-  echo "Wypełnij wszystkie pola";
-}
- ?>
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+ </head>
+ <body>
+   <h3>Dane użytkownika<h3>
+   <form action="5_1_data.php" method="get">
+       <input type="text" name="name" placeholder="Imię" /><br><br>
+       <input type="text" name="nationallity" placeholder="Narodowość" /><br><br>
+       <input type="number" name="age" placeholder="Wiek" /><br><br>
+       <input type="submit" value="Zatwierdź" /><br><br>
+   </form>
+ </body>
+</html>
